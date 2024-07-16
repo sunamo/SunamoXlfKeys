@@ -7,3 +7,5 @@ global using System.Diagnostics.CodeAnalysis;
 global using System.Reflection;
 global using System.Diagnostics;
 global using System.Net;
+global using SunamoXlfKeys._sunamo.SunamoValues;
+global using SunamoXlfKeys._sunamo.SunamoExceptions.OnlyInSE;

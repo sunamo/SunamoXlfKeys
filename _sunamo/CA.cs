@@ -1,6 +1,4 @@
-
-namespace SunamoXlfKeys._sunamo.SunamoExceptions._AddedToAllCsproj;
-using SunamoXlfKeys._sunamo.SunamoValues;
+namespace SunamoXlfKeys._sunamo;
 
 internal class CA
 {
