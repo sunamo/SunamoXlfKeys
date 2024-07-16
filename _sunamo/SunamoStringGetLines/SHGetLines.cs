@@ -1,6 +1,7 @@
 using SunamoXlfKeys._sunamo.SunamoExceptions.OnlyInSE;
 
 namespace SunamoXlfKeys._sunamo.SunamoStringGetLines;
+
 internal class SHGetLines
 {
     internal static List<string> GetLines(string p)

@@ -1,6 +1,7 @@
 using SunamoXlfKeys._sunamo.SunamoExceptions.OnlyInSE;
 
 namespace SunamoXlfKeys._sunamo.SunamoValues;
+
 internal class AllChars
 {
     internal static List<char> vsZnakyWithoutSpecial;
