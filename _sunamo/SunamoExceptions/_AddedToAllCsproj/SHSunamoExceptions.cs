@@ -1,8 +1,8 @@
-using SunamoXlfKeys._sunamo.SunamoValues;
 
 namespace SunamoXlfKeys._sunamo.SunamoExceptions._AddedToAllCsproj;
+using SunamoXlfKeys._sunamo.SunamoValues;
 
-internal class SHSunamoExceptions
+internal class SH
 {
     internal static string JoinNL(List<string> l)
     {

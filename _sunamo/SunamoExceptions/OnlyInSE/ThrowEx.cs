@@ -1,6 +1,6 @@
-using SunamoXlfKeys._sunamo.SunamoValues;
 
 namespace SunamoXlfKeys._sunamo.SunamoExceptions.OnlyInSE;
+using SunamoXlfKeys._sunamo.SunamoValues;
 
 internal class ThrowEx
 {
