@@ -1,6 +1,5 @@
-
 namespace SunamoXlfKeys._sunamo.SunamoValues;
-using SunamoXlfKeys._sunamo.SunamoExceptions.OnlyInSE;
+using SunamoXlfKeys._sunamo.SunamoExceptions;
 
 internal class AllChars
 {

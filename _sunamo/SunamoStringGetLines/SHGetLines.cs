@@ -1,6 +1,5 @@
-
 namespace SunamoXlfKeys._sunamo.SunamoStringGetLines;
-using SunamoXlfKeys._sunamo.SunamoExceptions.OnlyInSE;
+using SunamoXlfKeys._sunamo.SunamoExceptions;
 
 internal class SHGetLines
 {
