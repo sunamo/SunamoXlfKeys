@@ -4,7 +4,7 @@ global using System.Collections;
 global using System.Collections.Generic;
 global using System;
 global using System.Diagnostics;
-global using SunamoXlfKeys._sunamo.SunamoValues;
+global using SunamoXlfKeys;
 global using SunamoXlfKeys._sunamo.SunamoExceptions;
 global using System.Diagnostics.CodeAnalysis;
 global using System.Reflection;
