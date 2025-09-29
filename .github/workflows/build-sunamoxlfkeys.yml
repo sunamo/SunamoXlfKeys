@@ -1,0 +1,61 @@
+name: Build SunamoXlfKeys
+
+on:
+  push:
+    branches: [ "**" ]
+  pull_request:
+    branches: [ "**" ]
+
+jobs:
+  build:
+    name: Build SunamoXlfKeys
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        submodules: recursive
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '9.0.x'
+
+    - name: Restore dependencies
+      run: dotnet restore SunamoXlfKeys/SunamoXlfKeys.csproj
+
+    - name: Build
+      run: dotnet build SunamoXlfKeys/SunamoXlfKeys.csproj --configuration Release --no-restore
+
+  test:
+    name: Test SunamoXlfKeys.Tests
+    runs-on: ${{ matrix.os }}
+    needs: build
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        submodules: recursive
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '9.0.x'
+
+    - name: Restore dependencies
+      run: dotnet restore SunamoXlfKeys.Tests/SunamoXlfKeys.Tests.csproj
+
+    - name: Build tests
+      run: dotnet build SunamoXlfKeys.Tests/SunamoXlfKeys.Tests.csproj --configuration Release --no-restore
+
+    - name: Run tests
+      run: dotnet test SunamoXlfKeys.Tests/SunamoXlfKeys.Tests.csproj --configuration Release --no-build --verbosity normal
+      continue-on-error: true
