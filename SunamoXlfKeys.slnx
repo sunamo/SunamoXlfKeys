@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="SunamoXlfKeys.Tests\\SunamoXlfKeys.Tests.csproj" />
+  <Project Path="RunnerXlfKeys\\RunnerXlfKeys.csproj" />
+  <Project Path="SunamoXlfKeys\SunamoXlfKeys.csproj" />
+</Solution>
