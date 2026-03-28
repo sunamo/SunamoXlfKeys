@@ -1,6 +1,6 @@
 # SunamoXlfKeys
 
-Constants used in my i18n applications
+Constants used in i18n applications.
 
 ## Overview
 
@@ -14,15 +14,13 @@ dotnet add package SunamoXlfKeys
 
 ## Dependencies
 
-- **Microsoft.Extensions.Logging.Abstractions** (v9.0.3)
+- **Microsoft.Extensions.Logging.Abstractions** (v10.0.2)
 
 ## Package Information
 
 - **Package Name**: SunamoXlfKeys
-- **Version**: 25.3.29.1
-- **Target Framework**: net9.0
+- **Target Frameworks**: net10.0;net9.0;net8.0
 - **Category**: Platform-Independent NuGet Package
-- **Source Files**: 5
 
 ## Related Packages
 
