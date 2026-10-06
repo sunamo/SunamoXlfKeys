@@ -1,5 +1,10 @@
 # SunamoXlfKeys
 
+## Short description
+
+Konstanty používané v i18n aplikacích (klíče překladů). Součást sbírky pinp s testy a Runnerem.
+
+
 Constants used in i18n applications.
 
 ## Overview
